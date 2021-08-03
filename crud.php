@@ -14,8 +14,9 @@
     function GuardarArticulo($titulo, $contenido,$publicadopor)
     {
         $conn = ObtenerConexion();
-         return $sentencia = $conn->query("INSERT INTO articulos (titulo,contenido,publicadopor) 
+        $result = $conn->query("INSERT INTO articulos (Titulo,Contenido,PublicadoPor) 
         values ('$titulo','$contenido','$publicadopor')");
+        return $result;
     }
     function GetArticulos(){
         $conn = ObtenerConexion();

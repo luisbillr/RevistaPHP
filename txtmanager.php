@@ -13,11 +13,13 @@
         }
         $titulo = $_POST['txtTitulo'];
         $publicadopor ="luisbillr"; 
-        if(GuardarArticulo($titulo,$contenido,$publicadopor)){
+        $result = GuardarArticulo($titulo,$contenido,$publicadopor);
+        echo $result;
+        if($result){
             echo "Informacion Guardada";
         }else{
             echo "Error al guardar archivo";
-           
+           echo $contenido;
         }
     }
 
