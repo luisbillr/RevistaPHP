@@ -3,6 +3,7 @@
 
 <head>
     <?php
+      define('HOMEDIR', dirname(__FILE__));
         include "views/model/head.php";
    ?>
     <style>
@@ -12,6 +13,7 @@
 </head>
 
 <body>
+
     <?php 
         include "views/model/header.php";
      ?>
@@ -30,7 +32,7 @@
             <!-- Page Content -->
             <div id="content">
                 <?php 
-                include "views/content/revista/index.php";
+                include "revista_index.php";
                 ?>
             </div>
 
