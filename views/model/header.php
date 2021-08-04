@@ -35,7 +35,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                            class="nav-link m-2 menu-item">Subir Archivo</a>
+                            class="nav-link m-2 menu-item">Subir Contenido</a>
 
                     </li>
                 </ul>
@@ -45,16 +45,4 @@
     <div class="subheader">
 
     </div>
-    <!-- <div class="container">
-      <h1 class="logo"></h1>
-
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div> -->
 </header>

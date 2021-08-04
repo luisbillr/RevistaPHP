@@ -1,0 +1,3 @@
+
+Ejecute el Script "revista.sql" , recomendado: HEIDIDB
+He incluido un archivo llamado "archivo1" para prueba con LoremIpsum, para probar el boton subir archivo

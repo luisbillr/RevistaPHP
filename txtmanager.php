@@ -16,7 +16,8 @@
         $result = GuardarArticulo($titulo,$contenido,$publicadopor);
         echo $result;
         if($result){
-            echo "Informacion Guardada";
+         header('Location: /revista/index.php');
+           // echo "Informacion Guardada";
         }else{
             echo "Error al guardar archivo";
            echo $contenido;

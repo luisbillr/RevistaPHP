@@ -53,7 +53,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="contenedor">
-                        <img src="img\pujols.jpg" class="img-fluid img-thumbnail" alt="...">
+                        <img src="img\pujols.jpg" class="img-fluid img-thumbnail img-notice" alt="...">
                         <!-- <div class="texto-encima">Texto</div>
                         <div class="centrado">Centrado</div> -->
                         <a href="#" class="debajo">Albert Pujols</a>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="contenedor">
-                        <img src="img\goku.jpg" class="img-fluid img-thumbnail" alt="...">
+                        <img src="img\goku.jpg" class="img-fluid img-thumbnail img-notice" alt="...">
                         <!-- <div class="texto-encima">Texto</div>
                         <div class="centrado">Centrado</div> -->
                         <a href="#" class="debajo "> Vuelve DBZ</a>
@@ -81,6 +81,7 @@
                       while($row = $articulos->fetch_assoc()) {
                      echo '<div>
                                 <h2 class="article-title">'.$row["Titulo"].'</h2>
+                                <small class="text-muted" style="font-size: 12px;">'.$row["FechaCreacion"].' <i class="fa fa-eye"></i> 12 </small>
                                 <p>'.$row["Contenido"].' </p>
                         </div>' ;
                      }
@@ -88,63 +89,47 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="list-group">
-                <?php
+
+            <?php
                
                     $articulos = GetArticulosAside();
                      while($row = $articulos->fetch_assoc()) {
-                     echo ' <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                          echo '
+                            <div class="card">
+                            <div class="card-body">
+                                <a href="#" class="link-card" aria-current="true">
                                 <div class="row">
-                                    <div class="col-md-5">
-                                        <img src="img\img-1.jpg" class="img-fluid img-thumbnail" alt="..." height="100">
+                                        <div class="col-md-5">
+                                            <img src="img\img-1.jpg" class="img-fluid img-thumbnail" alt="..." height="100">
 
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h6><b> '.$row['Titulo'].'</b></h6>
+                                            <span class="aside-date">'. $row['FechaCreacion'] .'</span>
+                                            <span><i class="fa fa-eye"></i> 12</span>
+                                        </div>
                                     </div>
-                                    <div class="col-md-7">
-                                        <h6><b> '.$row['Titulo'].'</b></h6>
-                                        <span class="aside-date">'. $row['FechaCreacion'] .'</span>
-                                        <span><i class="fa fa-eye"></i> 12</span>
-                                    </div>
-                                </div>
+                                </a>
+                            </div>
+                           
+                            </div>';
+                    //  echo ' <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                    //             <div class="row">
+                    //                 <div class="col-md-5">
+                    //                     <img src="img\img-1.jpg" class="img-fluid img-thumbnail" alt="..." height="100">
 
-                            </a>';
+                    //                 </div>
+                    //                 <div class="col-md-7">
+                    //                     <h6><b> '.$row['Titulo'].'</b></h6>
+                    //                     <span class="aside-date">'. $row['FechaCreacion'] .'</span>
+                    //                     <span><i class="fa fa-eye"></i> 12</span>
+                    //                 </div>
+                    //             </div>
+
+                    //         </a>';
                      }
                 ?>
 
-                <!-- <a href="#" class="list-group-item list-group-item-action " aria-current="true">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="img\img-4.jpg" class="img-fluid img-thumbnail" alt="..." height="100">
-
-                        </div>
-                        <div class="col-md-7">
-                            <p class="mb-1">Some placeholder content in a paragraph.</p>
-                            <small>And some small print.</small>
-                        </div>
-                    </div>
-
-                </a>
-                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="img\img-2.jpg" class="img-fluid img-thumbnail" alt="..." height="100">
-
-                        </div>
-                        <div class="col-md-7">
-                            <p class="mb-1">Some placeholder content in a paragraph.</p>
-                            <small>And some small print.</small>
-                        </div>
-                    </div>
-
-                </a> -->
-                <!-- <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small class="text-muted">3 days ago</small>
-                    </div>
-                    <p class="mb-1">Some placeholder content in a paragraph.</p>
-                    <small class="text-muted">And some muted small print.</small>
-                </a> -->
-            </div>
         </div>
 
 
