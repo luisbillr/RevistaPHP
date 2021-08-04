@@ -1,15 +1,83 @@
-#contenido{
+.article-title {
+    font-family: "Trirong", serif;
+}
+
+.aside-date {
+    font-size: 12px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+#contenido {
     padding-top: 100px;
+}
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.contenedor:hover {
+    background: rgba(0, 0, 0, 0.100);
+}
+
+.contenedor .texto-encima {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.contenedor .centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.contenedor .debajo {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+
+    /* padding-left: 10px;
+    padding-right: 10px; */
 }
 #HAside {
     max-height: 50px;
 }
-#Hbd{
-    
-}
+
 nav li:hover {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
-   
 }
 
+.img-principal-derecha {
+    padding: 0 0 0 0;
+}
+
+.img-com {
+    border: 2px solid black;
+    padding: 25px;
+    background: url(mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.logo {
+    padding-left: 20px;
+}
+
+.logo .logo-title {
+    font-size: 35px;
+    font-family: "Sofia",
+        serif;
+    text-shadow: 4px 4px 4px #aaa;
+}

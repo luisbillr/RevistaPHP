@@ -18,8 +18,12 @@
         values ('$titulo','$contenido','$publicadopor')");
         return $result;
     }
-    function GetArticulos(){
+      function GetArticulos(){
         $conn = ObtenerConexion();
-        return $sentencia = $conn->query("select * from articulos order by idarticulo desc limit 10;");
+        return $sentencia = $conn->query("select * from articulos order by idarticulo desc limit 2;");
+    }
+    function GetArticulosAside(){
+        $conn = ObtenerConexion();
+        return $sentencia = $conn->query("select * from articulos order by idarticulo desc limit 5;");
     }
 ?>

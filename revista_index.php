@@ -16,24 +16,24 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img\img-4.jpg" class="d-block w-100" alt="..." height="400">
+                        <img src="img\img-4.jpg" class="d-block w-100" alt="..." height="350">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5>Robert Downey Jr</h5>
+                            <p>Nacido para ser Iron Man</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img\img-2.jpg" class="d-block w-100" alt="..." height="400">
+                        <img src="img\img-2.jpg" class="d-block w-100" alt="..." height="350">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h5>Lakers, "El Escuadron Del Miedo" </h5>
+                            <p>Los Lakers, causan panico...</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img\img-3.jpg" class="d-block w-100" alt="..." height="400">
+                        <img src="img\img-3.jpg" class="d-block w-100" alt="..." height="350">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <h5>Yadier Molina</h5>
+                            <p>Ha superado al jugador Albert Pujols en Hits</p>
                         </div>
                     </div>
                 </div>
@@ -49,67 +49,49 @@
                 </button>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="container">
-                <div class="row py-3">
-                    <div class="col-md-6  col-6 py-2">
-                        <img src="img\img-1.jpg" class="img-fluid img-thumbnail" alt="...">
+        <div class="col-md-6 img-principal-derecha">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contenedor">
+                        <img src="img\pujols.jpg" class="img-fluid img-thumbnail" alt="...">
+                        <!-- <div class="texto-encima">Texto</div>
+                        <div class="centrado">Centrado</div> -->
+                        <a href="#" class="debajo">Albert Pujols</a>
                     </div>
-                    <div class="col-md-6  col-6 py-2">
-                        <img src="img\img-1.jpg" class="img-fluid img-thumbnail" alt="...">
+                </div>
+                <div class="col-md-6">
+                    <div class="contenedor">
+                        <img src="img\goku.jpg" class="img-fluid img-thumbnail" alt="...">
+                        <!-- <div class="texto-encima">Texto</div>
+                        <div class="centrado">Centrado</div> -->
+                        <a href="#" class="debajo "> Vuelve DBZ</a>
                     </div>
-                    <div class="col-md-6  col-6 py-2">
-                        <img src="img\img-1.jpg" class="img-fluid img-thumbnail" alt="...">
-                    </div>
-                    <div class="col-md-6  col-6 py-2">
-                        <img src="img\img-1.jpg" class="img-fluid img-thumbnail" alt="...">
-                    </div>
-
-
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-md-3">
-                    <img src="img\img-1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="col-md-3">
-                    <img src="img\img-1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="col-md-3">
-                    <img src="img\img-1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="col-md-3">
-                    <img src="img\img-1.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div> -->
+
         </div>
 
     </div>
     <hr>
     <div class="row">
         <div class="col-md-9">
-
             <div id="articulo_front">
                 <?php
                     $articulos = GetArticulos();
                       while($row = $articulos->fetch_assoc()) {
                      echo '<div>
-                                <h2>'.$row["Titulo"].'</h2>
-                                <p><strong>Lorem Ipsum</strong>'.$row["Contenido"].' </p>
+                                <h2 class="article-title">'.$row["Titulo"].'</h2>
+                                <p>'.$row["Contenido"].' </p>
                         </div>' ;
                      }
                 ?>
-
-
-
-
             </div>
         </div>
         <div class="col-md-3">
             <div class="list-group">
                 <?php
                
-                    $articulos = GetArticulos();
+                    $articulos = GetArticulosAside();
                      while($row = $articulos->fetch_assoc()) {
                      echo ' <a href="#" class="list-group-item list-group-item-action " aria-current="true">
                                 <div class="row">
@@ -118,8 +100,9 @@
 
                                     </div>
                                     <div class="col-md-7">
-                                        <p class="mb-1"><b> '.$row['Titulo'].'</b></p>
-                                        <small>'. $row['FechaCreacion'] .'</small>
+                                        <h6><b> '.$row['Titulo'].'</b></h6>
+                                        <span class="aside-date">'. $row['FechaCreacion'] .'</span>
+                                        <span><i class="fa fa-eye"></i> 12</span>
                                     </div>
                                 </div>
 

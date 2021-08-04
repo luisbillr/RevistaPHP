@@ -18,9 +18,7 @@
         include "views/model/header.php";
      ?>
     <div class="container" id="contenido">
-
         <div class="wrapper">
-
             <!-- Sidebar -->
             <nav id="sidebar">
                 <!-- Aside -->
@@ -28,7 +26,6 @@
                     include "views/model/aside.php";
                  ?>
             </nav>
-
             <!-- Page Content -->
             <div id="content">
                 <?php 
@@ -37,17 +34,11 @@
             </div>
 
         </div>
-
-
-
-
-
-
         <!--====== Scripts -->
-        <?php 
+    </div>
+    <?php 
         include "views/model/footer.php";
         ?>
-    </div>
     <?php 
         include "views/model/ModalUploadTxt.php";
         ?>

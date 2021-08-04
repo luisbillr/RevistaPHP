@@ -6,10 +6,13 @@
                 <span class="w-100 d-lg-none d-block">
                     <!-- hidden spacer to center brand on mobile -->
                 </span>
-                <a class="navbar-brand d-none d-lg-inline-block" href="#"> Luis Heskey </a>
-                <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-                    <img src="https://via.placeholder.com/40?text=LOGO" alt="logo">
-                </a>
+                <div class="logo">
+                    <a class="navbar-brand d-none d-lg-inline-block logo-title" href="#"> Magazine </a>
+                    <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
+                        <img src="https://via.placeholder.com/40?text=LOGO" alt="logo">
+                    </a>
+                </div>
+
                 <div class="w-100 text-right">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#HNavBar">
                         <span class="navbar-toggler-icon"></span>
@@ -39,7 +42,9 @@
             </div>
         </div>
     </nav>
+    <div class="subheader">
 
+    </div>
     <!-- <div class="container">
       <h1 class="logo"></h1>
 

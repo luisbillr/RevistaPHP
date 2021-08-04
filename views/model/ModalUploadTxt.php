@@ -10,19 +10,20 @@
                 </div>
                 <div class="modal-body">
                     <div class="row">
+                        <div class="col-md-12">
+                            <label for="txtTitulo">Titulo</label>
+                            <input class="form-control" type="text" name="txtTitulo" id="txtTitulo" value=""
+                                placeholder="Introduzca el titulo del articulo">
+                        </div>
+
+                    </div>
+                    <div class="row">
                         <div class="mb-3">
                             <label for="formFile" class="form-label">Seleccione el archivo</label>
                             <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <label for="txtTitulo">Titulo</label>
-                            <input class="form-control" type="text" name="txtTitulo" id="txtTitulo" value=""
-                                placeholder="Introduzca el titulo">
-                        </div>
 
-                    </div>
 
                 </div>
                 <div class="modal-footer">
